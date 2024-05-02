@@ -1,0 +1,107 @@
+/* Basic css Properties */
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+/* add background image and basic properties */
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px 10%;
+  overflow: hidden;
+  position: relative;
+
+}
+/* adding styles in navbar */
+nav{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 140px;
+}
+/* desinging navbar list items */
+nav ul li{
+  display:inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+/* remove decoration on items and add colors on list */
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+/* add style on login btn */
+.login-btn{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 15px;
+}
+/* desing buton on download button */
+
+.download-btn{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 14px 40px;
+  background-image:linear-gradient(45deg, #df4881, #c430d7);
+  font-size: 14px;
+  border-radius: 30px;
+  border-bottom-right-radius: 0px;
+  transition: 0.5s;
+
+}
+
+/* banner section starting and add styles */
+.content{
+  margin-top: 10%;
+  max-width: 600px;
+}
+.content h1{
+  font-size: 70px;
+  color: #ffff;
+}
+.content p{
+  margin: 10px 0 30px;
+  color: #fff;
+  animation-delay: 0.5s;
+}
+.content .download-btn{
+  padding: 15px 80px;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+/* bottons adding over afects */
+.download-btn:hover{
+  border-bottom-right-radius: 30px;
+}
+.banner-img{
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.banner-img.anim{
+  animation-delay: 1.5s;
+}
+/* adding animation ona using anim class */
+.anim{
+  opacity: 0;
+  transform: translateX(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
